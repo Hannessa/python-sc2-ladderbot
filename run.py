@@ -9,14 +9,14 @@ bot = Bot(Race.Random, ExampleBot())
 
 # Start game
 if __name__ == '__main__':
-	if "--LadderServer" in sys.argv:
-		# Ladder game started by LadderManager
-		print("Starting ladder game...")
-		run_ladder_game(bot)
-	else:
-		# Local game
-		print("Starting local game...")
-		sc2.run_game(sc2.maps.get("Abyssal Reef LE"), [
-			bot,
-			Computer(Race.Protoss, Difficulty.VeryHard)
-		], realtime=True)
+    if "--LadderServer" in sys.argv:
+        # Ladder game started by LadderManager
+        print("Starting ladder game...")
+        run_ladder_game(bot)
+    else:
+        # Local game
+        print("Starting local game...")
+        sc2.run_game(sc2.maps.get("Abyssal Reef LE"), [
+            bot,
+            Computer(Race.Protoss, Difficulty.VeryHard)
+        ], realtime=True)
