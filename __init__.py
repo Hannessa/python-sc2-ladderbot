@@ -15,7 +15,7 @@ from sc2.client import Client
 # Run ladder game
 # This lets python-sc2 connect to a LadderManager game: https://github.com/Cryptyc/Sc2LadderServer
 # Based on: https://github.com/Dentosal/python-sc2/blob/master/examples/run_external.py
-async def run_ladder_game(bot):	
+def run_ladder_game(bot):
     # Load command line arguments
     parser = argparse.ArgumentParser()
     parser.add_argument('--GamePort', type=int, nargs="?", help='Game port')
