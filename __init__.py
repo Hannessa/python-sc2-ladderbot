@@ -24,6 +24,7 @@ def run_ladder_game(bot):
     parser.add_argument('--ComputerOpponent', type=str, nargs="?", help='Computer opponent')
     parser.add_argument('--ComputerRace', type=str, nargs="?", help='Computer race')
     parser.add_argument('--ComputerDifficulty', type=str, nargs="?", help='Computer difficulty')
+    parser.add_argument('--OpponentId', type=str, nargs="?", help='Opponent ID')
     args, unknown = parser.parse_known_args()
     
     if args.LadderServer == None:
