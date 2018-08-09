@@ -36,6 +36,9 @@ def run_ladder_game(bot):
     host_port = args.GamePort
     lan_port = args.StartPort
 
+    # Add opponent_id to the bot class (accessed through self.opponent_id)
+    bot.ai.opponent_id = args.OpponentId
+
     # Versus Computer doesn't work yet
     computer_opponent = False
     if args.ComputerOpponent:
