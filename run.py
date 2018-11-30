@@ -12,7 +12,8 @@ if __name__ == '__main__':
     if "--LadderServer" in sys.argv:
         # Ladder game started by LadderManager
         print("Starting ladder game...")
-        run_ladder_game(bot)
+        result, opponentid = run_ladder_game(bot)
+        print(result," against opponent ", opponentid)
     else:
         # Local game
         print("Starting local game...")
