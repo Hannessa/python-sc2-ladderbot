@@ -1,0 +1,10 @@
+{
+  "Bots": {
+    "example_bot": {
+      "Race": "Protoss",
+      "Type": "Python",
+      "RootPath": "./",
+      "FileName": "run.py"
+    }
+  }
+}
